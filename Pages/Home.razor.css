@@ -1,11 +1,29 @@
 ﻿.home {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+        "top"
+        "bottom";
+    grid-template-columns: 100%;
+    grid-template-rows: 85% 15%;
+    height: 100%;
     width: 100%;
 }
 
+    .home .top {
+        grid-area: top;
+        height: 100%;
+        width: 100%;
+    }
+
+    .home .bottom {
+        grid-area: bottom;
+        height: 100%;
+        width: 100%;
+    }
+
 .table-scroll {
     display: grid;
+    height: 100%;
     overflow: auto;
     width: 100%;
 }
@@ -13,7 +31,7 @@
 .submit-button-flex-container {
     align-items: center;
     display: flex;
-    height: 8rem;
+    height: 100%;
     justify-content: center;
     width: 100%;
 }
@@ -21,6 +39,7 @@
 .calculation-result-text {
     display: flex;
     justify-content: center;
+    margin-top: .4rem;
     width: 100%;
 }
 
