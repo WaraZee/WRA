@@ -1,0 +1,31 @@
+﻿.calculation-result-table {
+    color: var(--primary-text-color);
+    height: 0;
+    table-layout: fixed;
+    width: 60%;
+}
+
+th {
+    background-color: var(--dark-primary-color);
+    border: none;
+    border-radius: calc(var(--primary-border-radius) / 2);
+    font-weight: normal;
+}
+
+    th:first-child {
+        width: 4rem;
+    }
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tbody > tr {
+    background-color: var(--text-icon-color);
+    vertical-align: middle;
+}
+
+    tbody > tr:nth-child(1), tr:nth-child(2), tr:nth-child(3) {
+        background-color: var(--light-primary-color);
+    }

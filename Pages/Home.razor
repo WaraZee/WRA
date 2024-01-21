@@ -1,0 +1,68 @@
+﻿@page "/"
+@using WRA.Models
+
+<PageTitle>Home</PageTitle>
+
+<div class="home">
+    @if (_tips != null)
+    {
+        <div class="table-scroll">
+            <TipTable Tips="@_tips" />
+        </div>
+    }
+
+    <div class="submit-button-flex-container">
+        <SubmitButton Content="計算" OnClick="@(() => SubmitButtonOnClickAsync())" />
+    </div>
+
+    @* 単勝 *@
+    @if (_winCalculationResults != null)
+    {
+        <div class="calculation-result-text">
+            <ColumnLabel Content="計算結果 - 単勝" />
+        </div>
+
+        <div class="calculation-result-table-flex-container">
+            <CalculationResultTable CalculationResults="@_winCalculationResults" />
+
+        </div>
+    }
+
+    @* 複勝 *@
+    @if (_showCalculationResults != null)
+    {
+        <div class="calculation-result-text">
+            <ColumnLabel Content="計算結果 - 複勝" />
+        </div>
+
+        <div class="calculation-result-table-flex-container">
+            <CalculationResultTable CalculationResults="@_showCalculationResults" />
+
+        </div>
+    }
+
+    @* 3連単 *@
+    @if (_trierceCalculationResults != null)
+    {
+        <div class="calculation-result-text">
+            <ColumnLabel Content="計算結果 - 3連単" />
+        </div>
+
+        <div class="calculation-result-table-flex-container">
+            <CalculationResultTable CalculationResults="@_trierceCalculationResults" />
+
+        </div>
+    }
+
+    @* 3連複 *@
+    @if (_trioCalculationResults != null)
+    {
+        <div class="calculation-result-text">
+            <ColumnLabel Content="計算結果 - 3連複" />
+        </div>
+
+        <div class="calculation-result-table-flex-container">
+            <CalculationResultTable CalculationResults="@_trioCalculationResults" />
+        </div>
+    }
+</div>

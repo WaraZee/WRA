@@ -1,0 +1,8 @@
+﻿.title-label {
+    align-items: center;
+    display: flex;
+    font-family: 'Lemon', serif;
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+}

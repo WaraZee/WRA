@@ -1,0 +1,33 @@
+﻿.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-scroll {
+    display: grid;
+    overflow: auto;
+    width: 100%;
+}
+
+.submit-button-flex-container {
+    align-items: center;
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.calculation-result-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.calculation-result-table-flex-container {
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}

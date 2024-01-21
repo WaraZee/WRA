@@ -1,0 +1,21 @@
+﻿@using WRA.Models
+
+<table class="calculation-result-table">
+    <thead>
+        <tr>
+            <th><SortButton Content="馬番" OnClick="@(() => ThButtonOnClickAsync(1))" /></th>
+            <th><SortButton Content="払戻金" OnClick="@(() => ThButtonOnClickAsync(2))" /></th>
+            <th><SortButton Content="期待値" OnClick="@(() => ThButtonOnClickAsync(3))" /></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CalculationResult calculationResult in CalculationResults)
+        {
+            <tr>
+                <td>@(calculationResult.HorseNumber + 1)</td>
+                <td>@calculationResult.RefundAmount</td>
+                <td>@calculationResult.ExpectedValue</td>
+            </tr>
+        }
+    </tbody>
+</table>

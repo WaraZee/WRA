@@ -1,0 +1,11 @@
+﻿.number-of-race-input {
+    border: none;
+    border-radius: calc(var(--primary-border-radius) / 4);
+    height: 100%;
+    width: 100%;
+}
+
+    .number-of-race-input:focus {
+        background-color: var(--light-primary-color);
+        outline: none;
+    }

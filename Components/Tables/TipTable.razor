@@ -1,0 +1,35 @@
+﻿@using WRA.Models
+
+<table class="tip-table">
+    <thead>
+        <tr>
+            <th>@_horseNumberHeader</th>
+            <th>@_winOddsHeader</th>
+            <th>@_showOddsHeader</th>
+            <th>@_trierceOddsHeader</th>
+            <th>@_trioOddsHeader</th>
+            <th>@_numberOfRacesHeader</th>
+            <th>@_numberOfFirstPlacesHeader</th>
+            <th>@_numberOfSecondPlacesHeader</th>
+            <th>@_numberOfThirdPlacesHeader</th>
+            <th>@_stakeHeader</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Tip tip in Tips)
+        {
+            <tr>
+                <td>@(tip.HorseNumber + 1)</td>
+                <td><OddsInput ColumnId="1" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><OddsInput ColumnId="2" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><OddsInput ColumnId="3" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><OddsInput ColumnId="4" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><NumberOfRaceInput ColumnId="5" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><NumberOfRaceInput ColumnId="6" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><NumberOfRaceInput ColumnId="7" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><NumberOfRaceInput ColumnId="8" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><StakeInput ColumnId="9" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+            </tr>
+        }
+    </tbody>
+</table>

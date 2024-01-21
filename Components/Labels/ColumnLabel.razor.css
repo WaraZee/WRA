@@ -1,0 +1,19 @@
+﻿.column-label {
+    display: flex;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/*Tablet*/
+@media (600px <= width < 768px) {
+    .column-label {
+        font-size: 120%;
+    }
+}
+
+/*PC*/
+@media (768px <= width) {
+    .column-label {
+        font-size: 120%;
+    }
+}
