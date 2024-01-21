@@ -19,11 +19,19 @@ namespace WRA.Components.Tables
                         break;
 
                     case 2:
-                        CalculationResults = CalculationResults.OrderByDescending(calcResult => calcResult.RefundAmount).ToList();
+                        CalculationResults = CalculationResults.OrderBy(calcResult => calcResult.Ranking).ToList();
                         break;
 
                     case 3:
-                        CalculationResults = CalculationResults.OrderByDescending(calcResult => calcResult.ExpectedValue).ToList();
+                        CalculationResults = CalculationResults.OrderByDescending(calcResult => calcResult.Odds).ToList();
+                        break;
+
+                    case 4:
+                        CalculationResults = CalculationResults.OrderByDescending(calcResult => calcResult.Trustworthiness).ToList();
+                        break;
+
+                    case 5:
+                        CalculationResults = CalculationResults.OrderByDescending(calcResult => calcResult.RefundAmount).ToList();
                         break;
 
                     default:

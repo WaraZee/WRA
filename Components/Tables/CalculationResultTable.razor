@@ -4,8 +4,10 @@
     <thead>
         <tr>
             <th><SortButton Content="馬番" OnClick="@(() => ThButtonOnClickAsync(1))" /></th>
-            <th><SortButton Content="払戻金" OnClick="@(() => ThButtonOnClickAsync(2))" /></th>
-            <th><SortButton Content="期待値" OnClick="@(() => ThButtonOnClickAsync(3))" /></th>
+            <th><SortButton Content="人気" OnClick="@(() => ThButtonOnClickAsync(2))" /></th>
+            <th><SortButton Content="オッズ" OnClick="@(() => ThButtonOnClickAsync(3))" /></th>
+            <th><SortButton Content="信頼度" OnClick="@(() => ThButtonOnClickAsync(4))" /></th>
+            <th><SortButton Content="払戻金" OnClick="@(() => ThButtonOnClickAsync(5))" /></th>
         </tr>
     </thead>
     <tbody>
@@ -13,8 +15,10 @@
         {
             <tr>
                 <td>@(calculationResult.HorseNumber + 1)</td>
+                <td>@calculationResult.Ranking</td>
+                <td>@calculationResult.Odds</td>
+                <td>@calculationResult.Trustworthiness</td>
                 <td>@calculationResult.RefundAmount</td>
-                <td>@calculationResult.ExpectedValue</td>
             </tr>
         }
     </tbody>

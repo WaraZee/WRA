@@ -2,7 +2,7 @@
     color: var(--primary-text-color);
     height: 0;
     table-layout: fixed;
-    width: 60%;
+    width: 80%;
 }
 
 th {
@@ -12,8 +12,12 @@ th {
     font-weight: normal;
 }
 
-    th:first-child {
+    th:nth-child(1), th:nth-child(2) {
         width: 4rem;
+    }
+
+    th:nth-child(4) {
+        width: 40%;
     }
 
 td {
