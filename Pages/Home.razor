@@ -5,15 +5,19 @@
 <PageTitle>Home</PageTitle>
 
 <div class="home">
-    @if (_tips != null)
-    {
-        <div class="table-scroll">
-            <TipTable Tips="@_tips" />
-        </div>
-    }
+    <div class="top">
+        @if (_tips != null)
+        {
+            <div class="table-scroll">
+                <TipTable Tips="@_tips" />
+            </div>
+        }
+    </div>
 
-    <div class="submit-button-flex-container">
-        <SubmitButton Content="計算" OnClick="@(() => SubmitButtonOnClickAsync())" />
+    <div class="bottom">
+        <div class="submit-button-flex-container">
+            <SubmitButton Content="計算" OnClick="@(() => SubmitButtonOnClickAsync())" />
+        </div>
     </div>
 
     @* 単勝 *@

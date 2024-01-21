@@ -13,13 +13,16 @@
     <tbody>
         @foreach (CalculationResult calculationResult in CalculationResults)
         {
-            <tr>
-                <td>@(calculationResult.HorseNumber + 1)</td>
-                <td>@calculationResult.Ranking</td>
-                <td>@calculationResult.Odds</td>
-                <td>@calculationResult.Trustworthiness</td>
-                <td>@calculationResult.RefundAmount</td>
-            </tr>
+            @if (calculationResult.Odds < 1000)
+            {
+                <tr>
+                    <td>@(calculationResult.HorseNumber + 1)</td>
+                    <td>@calculationResult.Ranking</td>
+                    <td>@calculationResult.Odds</td>
+                    <td>@calculationResult.Trustworthiness</td>
+                    <td>@calculationResult.RefundAmount</td>
+                </tr>
+            }
         }
     </tbody>
 </table>

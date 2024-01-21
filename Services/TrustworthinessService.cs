@@ -11,6 +11,26 @@ namespace WRA.Services
         {
             _ranking = 0;
 
+            foreach (Tip tip in tips)
+            {
+                if (tip.WinOdds <= 0)
+                {
+                    tip.WinOdds = 1000f;
+                }
+                if (tip.ShowOdds <= 0)
+                {
+                    tip.ShowOdds = 1000f;
+                }
+                if (tip.TrierceOdds <= 0)
+                {
+                    tip.TrierceOdds = 1000f;
+                }
+                if (tip.TrioOdds <= 0)
+                {
+                    tip.TrioOdds = 1000f;
+                }
+            }
+
             tips = tips.OrderBy(tip => tip.WinOdds).ToList();
 
             foreach (Tip tip in tips)
