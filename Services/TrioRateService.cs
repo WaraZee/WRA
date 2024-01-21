@@ -15,7 +15,7 @@ namespace WRA.Services
                 {
                     HorseNumber = tip.HorseNumber,
                     RefundAmount = tip.TrioOdds * tip.Stake,
-                    Trustworthiness = (1.0f / tip.Ranking) * tip.ShowRate * 0.6f + (1 / tip.NumberOfRaces) * (tip.NumberOfFirstPlaces + tip.NumberOfSecondPlaces + tip.NumberOfThirdPlaces) * 0.4f
+                    Trustworthiness = (1.0f / tip.WinRanking) * tip.ShowRate * 0.6f + (1 / tip.NumberOfRaces) * (tip.NumberOfFirstPlaces + tip.NumberOfSecondPlaces + tip.NumberOfThirdPlaces) * 0.4f
                 }
                 );
             }
