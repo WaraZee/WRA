@@ -15,7 +15,7 @@ namespace WRA.Services
 
             foreach (Tip tip in tips)
             {
-                tip.Ranking = _ranking + 1;
+                tip.WinRanking = _ranking + 1;
                 tip.WinRate = winShowRates[_ranking].WinRate;
                 _ranking++;
             }
@@ -26,7 +26,7 @@ namespace WRA.Services
 
             foreach (Tip tip in tips)
             {
-                tip.Ranking = _ranking + 1;
+                tip.ShowRanking = _ranking + 1;
                 tip.ShowRate = winShowRates[_ranking].ShowRate;
                 _ranking++;
             }
