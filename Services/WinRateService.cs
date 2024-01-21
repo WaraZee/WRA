@@ -24,9 +24,9 @@ namespace WRA.Services
                 calculationResults.Add(new CalculationResult
                 {
                     HorseNumber = tip.HorseNumber,
-                    Ranking = tip.Ranking,
+                    Ranking = tip.WinRanking,
                     Odds = tip.WinOdds,
-                    Trustworthiness = (1.0f / tip.Ranking) * tip.WinRate * 60f + winningRate * 40f,
+                    Trustworthiness = (1.0f / tip.WinRanking) * tip.WinRate * 60f + winningRate * 40f,
                     RefundAmount = tip.WinOdds * tip.Stake
                 }
                 );
