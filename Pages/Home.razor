@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using WRA.Models
+@using WRA.Services.Interfaces
 
 <PageTitle>Home</PageTitle>
 
@@ -45,7 +46,7 @@
     @if (_trierceCalculationResults != null)
     {
         <div class="calculation-result-text">
-            <ColumnLabel Content="計算結果 - 3連単" />
+            <ColumnLabel Content="計算結果 - 3連単 (実装中) " />
         </div>
 
         <div class="calculation-result-table-flex-container">
@@ -58,7 +59,7 @@
     @if (_trioCalculationResults != null)
     {
         <div class="calculation-result-text">
-            <ColumnLabel Content="計算結果 - 3連複" />
+            <ColumnLabel Content="計算結果 - 3連複 (実装中) " />
         </div>
 
         <div class="calculation-result-table-flex-container">
