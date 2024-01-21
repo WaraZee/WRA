@@ -20,6 +20,7 @@ namespace WRA.Services
                 {
                     winningRate = (1 / tip.NumberOfRaces) * (tip.NumberOfFirstPlaces * 1.0f + tip.NumberOfSecondPlaces * 0.8f + tip.NumberOfThirdPlaces * 0.6f);
                 }
+
                 calculationResults.Add(new CalculationResult
                 {
                     HorseNumber = tip.HorseNumber,
