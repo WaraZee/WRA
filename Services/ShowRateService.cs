@@ -18,7 +18,7 @@ namespace WRA.Services
                 }
                 else
                 {
-                    winningRate = (1 / tip.NumberOfRaces) * (tip.NumberOfFirstPlaces + tip.NumberOfSecondPlaces + tip.NumberOfThirdPlaces);
+                    winningRate = (1.0f / tip.NumberOfRaces) * (tip.NumberOfFirstPlaces + tip.NumberOfSecondPlaces + tip.NumberOfThirdPlaces);
                 }
 
                 calculationResults.Add(new CalculationResult
@@ -26,7 +26,7 @@ namespace WRA.Services
                     HorseNumber = tip.HorseNumber,
                     Ranking = tip.ShowRanking,
                     Odds = tip.ShowOdds,
-                    Trustworthiness = (1.0f / tip.WinRanking) * tip.ShowRate * 60f + winningRate * 40f,
+                    Trustworthiness = (tips.Min(tip => tip.ShowOdds) / tip.ShowOdds) * tip.ShowRate * 60f + winningRate * 40f,
                     RefundAmount = tip.ShowOdds * tip.Stake
                 }
                 );

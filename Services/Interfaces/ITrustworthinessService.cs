@@ -4,6 +4,6 @@ namespace WRA.Services.Interfaces
 {
     public interface ITrustworthinessService
     {
-        List<Tip> CalculateTrustworthinessByOdds(List<WinShowRate> winShowRates, List<Tip> tips);
+        List<Tip> CalculateTrustworthinessByOdds(List<WinningRate> winShowRates, List<Tip> tips);
     }
 }
