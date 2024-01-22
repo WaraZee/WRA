@@ -1,6 +1,6 @@
 ﻿namespace WRA.Store
 {
-    public class LoadingState
+    public class CourseStateContainer
     {
         private string? savedString;
 

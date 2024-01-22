@@ -1,0 +1,4 @@
+﻿@using WRA.Store
+@inject CourseStateContainer CourseStateContainer
+
+<button class="course-button" @onclick="@(() => ChangePropertyValue(@Course))">@Content</button>

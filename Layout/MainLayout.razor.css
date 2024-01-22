@@ -10,8 +10,11 @@
 }
 
     .page .top {
+        align-items: center;
+        display: flex;
         grid-area: top;
         height: 100%;
+        justify-content: space-between;
         width: 100%;
     }
 

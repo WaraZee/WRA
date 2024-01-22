@@ -12,10 +12,11 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services.AddSingleton<StateContainer>();
+builder.Services.AddSingleton<CourseStateContainer>();
 
 // 計算用サービス
 builder.Services.AddSingleton<ITrustworthinessService, TrustworthinessService>();
-builder.Services.AddSingleton<IWinRateService, WinRateService>();
+builder.Services.AddSingleton<IWinningRateService, WinRateService>();
 builder.Services.AddSingleton<IShowRateService, ShowRateService>();
 builder.Services.AddSingleton<ITrieceRateService, TrierceRateService>();
 builder.Services.AddSingleton<ITrioRateService, TrioRateService>();

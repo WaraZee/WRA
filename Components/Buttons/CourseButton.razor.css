@@ -1,0 +1,24 @@
+﻿.course-button {
+    height: 80%;
+    width: 20%;
+}
+
+    .course-button:active {
+        box-shadow: none;
+    }
+
+/*Tablet*/
+@media (600px <= width < 768px) {
+    .course-button {
+        height: 90%;
+        width: 15%;
+    }
+}
+
+/*PC*/
+@media (768px <= width) {
+    .course-button {
+        height: 90%;
+        width: 15%;
+    }
+}

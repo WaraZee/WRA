@@ -17,110 +17,22 @@ namespace WRA.Pages
         // 3連複
         private List<CalculationResult>? _trioCalculationResults;
 
+        private List<WinningRate>? _winShowRates;
+
         [Inject]
         protected ITrustworthinessService? TrustworthinessService { get; set; }
         [Inject]
-        protected IWinRateService? WinRateService { get; set; }
+        protected IWinningRateService? WinRateService { get; set; }
         [Inject]
         protected IShowRateService? ShowRateService { get; set; }
-
-        private List<WinShowRate> _turfWinShowRates = new List<WinShowRate>
-        {
-            new WinShowRate
-            {
-                WinRate = 33.1f / 100f,
-                ShowRate = 64.2f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 19.1f / 100f,
-                ShowRate = 52.4f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 13.8f / 100f,
-                ShowRate = 42.9f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 9.2f / 100f,
-                ShowRate = 33.2f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 7.1f / 100f,
-                ShowRate = 26.9f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 5.0f / 100f,
-                ShowRate = 21.3f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 3.9f / 100f,
-                ShowRate = 16.3f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 2.8f / 100f,
-                ShowRate = 12.5f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 2.0f / 100f,
-                ShowRate = 10.3f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 1.8f / 100f,
-                ShowRate = 7.9f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 1.1f / 100f,
-                ShowRate = 6.4f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 1.0f / 100f,
-                ShowRate = 5.3f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 0.8f / 100f,
-                ShowRate = 4.0f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 0.6f / 100f,
-                ShowRate = 2.9f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 0.3f / 100f,
-                ShowRate = 2.1f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 0.3f / 100f,
-                ShowRate = 1.5f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 0.1f / 100f,
-                ShowRate = 1.2f / 100f
-            },
-            new WinShowRate
-            {
-                WinRate = 0.1f / 100f,
-                ShowRate = 0.8f / 100f
-            }
-        };
 
         protected override async Task OnInitializedAsync()
         {
             await InitializeTipAsync();
+            if (WinRateService != null)
+            {
+                _winShowRates = await WinRateService.CreateAsync(CourseStateContainer.Property);
+            }
         }
 
         private async Task InitializeTipAsync()
@@ -179,11 +91,15 @@ namespace WRA.Pages
 
         private async Task SubmitButtonOnClickAsync()
         {
+            if (WinRateService != null)
+            {
+                _winShowRates = await WinRateService.CreateAsync(CourseStateContainer.Property);
+            }
             await Task.Run(() =>
             {
                 if (TrustworthinessService != null && WinRateService != null && ShowRateService != null)
                 {
-                    _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_turfWinShowRates, _tips);
+                    _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
                     _winCalculationResults = WinRateService.Calculate(_tips);
                     _showCalculationResults = ShowRateService.Calculate(_tips);
                 }
