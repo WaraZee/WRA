@@ -220,6 +220,18 @@ namespace WRA.Services
                             WinRate = 0.3f / 100f,
                             OneTwoRate = 0.7f / 100f,
                             ShowRate = 1.2f / 100f
+                        },
+                        new WinningRate
+                        {
+                            WinRate = 0f,
+                            OneTwoRate = 0f,
+                            ShowRate = 0f
+                        },
+                        new WinningRate
+                        {
+                            WinRate = 0f,
+                            OneTwoRate = 0f,
+                            ShowRate = 0f
                         }
                     };
                     return dirtWinShowRates;

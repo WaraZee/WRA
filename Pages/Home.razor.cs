@@ -43,7 +43,8 @@ namespace WRA.Pages
                 {
                     Tip tip = new Tip
                     {
-                        HorseNumber = i
+                        HorseNumber = i,
+                        Stake = 100f
                     };
                     _tips.Add(tip);
                 }
@@ -89,23 +90,25 @@ namespace WRA.Pages
             });
         }
 
-        private void SubmitButtonOnClickAsync()
+        private async Task SubmitButtonOnClickAsync()
         {
-            if (WinningRateService != null)
+            await Task.Run(() =>
             {
-                _winShowRates = WinningRateService.Create(CourseStateContainer.Property);
-            }
-            if (TrustworthinessService != null && WinningRateService != null && ShowRateService != null)
-            {
-                if (CourseStateContainer.Property == "dirt")
+
+                if (WinningRateService != null)
                 {
-                    _tips.Remove(_tips[_tips.Count - 1]);
-                    _tips.Remove(_tips[_tips.Count - 2]);
+                    _winShowRates = WinningRateService.Create(CourseStateContainer.Property);
                 }
-                _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
-                _winCalculationResults = WinningRateService.Calculate(_tips);
-                _showCalculationResults = ShowRateService.Calculate(_tips);
-            }
+                if (TrustworthinessService != null && WinningRateService != null && ShowRateService != null)
+                {
+                    if (_winShowRates != null)
+                    {
+                        _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
+                    }
+                    _winCalculationResults = WinningRateService.Calculate(_tips);
+                    _showCalculationResults = ShowRateService.Calculate(_tips);
+                }
+            });
         }
     }
 }
