@@ -22,16 +22,16 @@ namespace WRA.Pages
         [Inject]
         protected ITrustworthinessService? TrustworthinessService { get; set; }
         [Inject]
-        protected IWinningRateService? WinRateService { get; set; }
+        protected IWinningRateService? WinningRateService { get; set; }
         [Inject]
         protected IShowRateService? ShowRateService { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
             await InitializeTipAsync();
-            if (WinRateService != null)
+            if (WinningRateService != null)
             {
-                _winShowRates = await WinRateService.CreateAsync(CourseStateContainer.Property);
+                _winShowRates = WinningRateService.Create(CourseStateContainer.Property);
             }
         }
 
@@ -89,21 +89,23 @@ namespace WRA.Pages
             });
         }
 
-        private async Task SubmitButtonOnClickAsync()
+        private void SubmitButtonOnClickAsync()
         {
-            if (WinRateService != null)
+            if (WinningRateService != null)
             {
-                _winShowRates = await WinRateService.CreateAsync(CourseStateContainer.Property);
+                _winShowRates = WinningRateService.Create(CourseStateContainer.Property);
             }
-            await Task.Run(() =>
+            if (TrustworthinessService != null && WinningRateService != null && ShowRateService != null)
             {
-                if (TrustworthinessService != null && WinRateService != null && ShowRateService != null)
+                if (CourseStateContainer.Property == "dirt")
                 {
-                    _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
-                    _winCalculationResults = WinRateService.Calculate(_tips);
-                    _showCalculationResults = ShowRateService.Calculate(_tips);
+                    _tips.Remove(_tips[_tips.Count - 1]);
+                    _tips.Remove(_tips[_tips.Count - 2]);
                 }
-            });
+                _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
+                _winCalculationResults = WinningRateService.Calculate(_tips);
+                _showCalculationResults = ShowRateService.Calculate(_tips);
+            }
         }
     }
 }

@@ -5,14 +5,12 @@ namespace WRA.Services
 {
     public class WinRateService : IWinningRateService
     {
-        public async Task<List<WinningRate>> CreateAsync(string name)
+        public List<WinningRate> Create(string name)
         {
-            return await Task.Run(() =>
+            switch (name)
             {
-                switch (name)
-                {
-                    case "turf":
-                        List<WinningRate> turfWinShowRates = new List<WinningRate>
+                case "turf":
+                    List<WinningRate> turfWinShowRates = new List<WinningRate>
                     {
                         new WinningRate
                         {
@@ -123,9 +121,9 @@ namespace WRA.Services
                             ShowRate = 0.8f / 100f
                         }
                     };
-                        return turfWinShowRates;
-                    case "dirt":
-                        List<WinningRate> dirtWinShowRates = new List<WinningRate>
+                    return turfWinShowRates;
+                case "dirt":
+                    List<WinningRate> dirtWinShowRates = new List<WinningRate>
                     {
                         new WinningRate
                         {
@@ -224,12 +222,11 @@ namespace WRA.Services
                             ShowRate = 1.2f / 100f
                         }
                     };
-                        return dirtWinShowRates;
-                    default:
-                        List<WinningRate> winShowRates = new List<WinningRate>();
-                        return winShowRates;
-                }
-            });
+                    return dirtWinShowRates;
+                default:
+                    List<WinningRate> winShowRates = new List<WinningRate>();
+                    return winShowRates;
+            }
         }
 
         public List<CalculationResult> Calculate(List<Tip> tips)
@@ -247,8 +244,6 @@ namespace WRA.Services
                 {
                     winningRate = 0f;
                 }
-
-                var a = tips.Min(tip => tip.WinOdds);
 
                 calculationResults.Add(new CalculationResult
                 {
