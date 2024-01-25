@@ -1,7 +1,7 @@
 ﻿.tip-table {
     height: 100%;
     table-layout: fixed;
-    width: 130%;
+    width: 110%;
 }
 
 th {
@@ -18,4 +18,22 @@ th {
 td {
     text-align: center;
     vertical-align: middle;
+}
+
+/*Tablet*/
+@media (600px <= width < 768px) {
+    .tip-table {
+        height: 100%;
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+/*PC*/
+@media (768px <= width) {
+    .tip-table {
+        height: 100%;
+        table-layout: fixed;
+        width: 100%;
+    }
 }

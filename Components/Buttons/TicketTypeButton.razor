@@ -1,0 +1,5 @@
+﻿@using WRA.Store
+@inherits ButtonBase
+@inject StateContainer StateContainer
+
+<button class="ticket-type-button" @onclick="@(() => ChangePropertyValue(@Type))">@Content</button>

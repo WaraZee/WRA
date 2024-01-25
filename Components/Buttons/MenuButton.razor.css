@@ -1,0 +1,50 @@
+﻿.menu-button {
+    background-color: transparent;
+}
+
+    .menu-button:active {
+    }
+
+.mode-button-menu {
+    align-items: center;
+    animation: fade-in 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: var(--background-color-dark-theme);
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    top: calc(4rem + .4rem);
+    width: 16rem;
+    z-index: 2;
+    -webkit-animation: fade-in 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+    .mode-button-menu .course-button-flex-container {
+        align-items: center;
+        display: flex;
+        height: 10%;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

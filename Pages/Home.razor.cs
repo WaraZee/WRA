@@ -31,7 +31,7 @@ namespace WRA.Pages
             await InitializeTipAsync();
             if (WinningRateService != null)
             {
-                _winShowRates = WinningRateService.Create(CourseStateContainer.Property);
+                _winShowRates = WinningRateService.Create(CourseStateContainer.CourseName);
             }
         }
 
@@ -97,7 +97,7 @@ namespace WRA.Pages
 
                 if (WinningRateService != null)
                 {
-                    _winShowRates = WinningRateService.Create(CourseStateContainer.Property);
+                    _winShowRates = WinningRateService.Create(CourseStateContainer.CourseName);
                 }
                 if (TrustworthinessService != null && WinningRateService != null && ShowRateService != null)
                 {

@@ -1,4 +1,5 @@
 ﻿@using WRA.Store
-@inject CourseStateContainer CourseStateContainer
+@implements IDisposable
+@inject StateContainer StateContainer
 
-<button class="course-button" @onclick="@(() => ChangePropertyValue(@Course))">@Content</button>
+<button class="course-button" style="background-color: @_backgroundColor;" @onclick="@(() => ChangePropertyValue(@Course))">@Content</button>

@@ -1,6 +1,8 @@
 ﻿.course-button {
+    background-color: var(--dark-primary-color);
+    border-radius: calc(var(--primary-border-radius) / 2);
     height: 80%;
-    width: 20%;
+    width: 45%;
 }
 
     .course-button:active {
@@ -10,15 +12,15 @@
 /*Tablet*/
 @media (600px <= width < 768px) {
     .course-button {
-        height: 90%;
-        width: 15%;
+        height: 80%;
+        width: 45%;
     }
 }
 
 /*PC*/
 @media (768px <= width) {
     .course-button {
-        height: 90%;
-        width: 15%;
+        height: 80%;
+        width: 45%;
     }
 }

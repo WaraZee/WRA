@@ -8,6 +8,8 @@ namespace WRA.Components.Buttons.Bases
         [Parameter]
         public string Content { get; set; } = "Button";
         [Parameter]
+        public bool IsSelected { get; set; }
+        [Parameter]
         public EventCallback<MouseEventArgs> OnClick { get; set; }
     }
 }

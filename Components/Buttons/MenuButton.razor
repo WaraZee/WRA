@@ -1,0 +1,32 @@
+﻿@using WRA.Store
+@implements IDisposable
+@inject StateContainer StateContainer
+
+<button class="menu-button" @onclick="@(() => ChangePropertyValue(@StateContainer.MenuIsClicked))">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <mask id="menu-button-svg" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#d9d9d9" />
+        </mask>
+        <g mask="url(#menu-button-svg)">
+            <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#ffffff" />
+        </g>
+    </svg>
+</button>
+
+@if (StateContainer.MenuIsClicked)
+{
+    <div class="mode-button-menu">
+        <div class="course-button-flex-container">
+            <CourseButton Content="芝" Course="@StateContainer.CourseName" />
+            <CourseButton Content="ダート" Course="@StateContainer.CourseName" />
+        </div>
+        <TicketTypeButton Content="単勝" OnClick="@(() => ChangePropertyValue(0))" />
+        <TicketTypeButton Content="複勝" OnClick="@(() => ChangePropertyValue(1))" />
+        <TicketTypeButton Content="枠連" OnClick="@(() => ChangePropertyValue(2))" />
+        <TicketTypeButton Content="馬単" OnClick="@(() => ChangePropertyValue(3))" />
+        <TicketTypeButton Content="馬連" OnClick="@(() => ChangePropertyValue(4))" />
+        <TicketTypeButton Content="ワイド" OnClick="@(() => ChangePropertyValue(5))" />
+        <TicketTypeButton Content="3連単" OnClick="@(() => ChangePropertyValue(6))" />
+        <TicketTypeButton Content="3連複" OnClick="@(() => ChangePropertyValue(7))" />
+    </div>
+}
