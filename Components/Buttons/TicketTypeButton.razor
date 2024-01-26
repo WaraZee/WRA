@@ -2,4 +2,13 @@
 @inherits ButtonBase
 @inject StateContainer StateContainer
 
-<button class="ticket-type-button" @onclick="@(() => ChangePropertyValue(@Type))">@Content</button>
+<input id="win-show-radio" name="ticket-type-radio" type="radio" checked="@(StateContainer.TicketTypeId == 0)" @onchange="@(() => ChangePropertyValue(0))" />
+<label for="win-show-radio">単勝・複勝</label>
+<input id="bracket-quinella-radio" name="ticket-type-radio" type="radio" checked="@(StateContainer.TicketTypeId == 1)" @onchange="@(() => ChangePropertyValue(1))" />
+<label for="bracket-quinella-radio">枠連 - </label>
+<input id="exacta-quinella-radio" name="ticket-type-radio" type="radio" checked="@(StateContainer.TicketTypeId == 2)" @onchange="@(() => ChangePropertyValue(2))" />
+<label for="exacta-quinella-radio">馬単・馬連 - </label>
+<input id="quinella-place-radio" name="ticket-type-radio" type="radio" checked="@(StateContainer.TicketTypeId == 3)" @onchange="@(() => ChangePropertyValue(3))" />
+<label for="quinella-place-radio">ワイド - </label>
+<input id="tierce-radio" name="ticket-type-radio" type="radio" checked="@(StateContainer.TicketTypeId == 4)" @onchange="@(() => ChangePropertyValue(4))" />
+<label for="tierce-radio">3連単・3連複 - </label>

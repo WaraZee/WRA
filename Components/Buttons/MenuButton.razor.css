@@ -8,7 +8,7 @@
     background-color: var(--background-color-dark-theme);
     display: flex;
     flex-direction: column;
-    height: 32rem;
+    height: 30rem;
     justify-content: space-evenly;
     position: absolute;
     right: 0;

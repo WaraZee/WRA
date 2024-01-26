@@ -1,8 +1,11 @@
 ﻿@page "/"
-@using WRA.Models
 @using WRA.Services.Interfaces
 @using WRA.Store
-@inject StateContainer CourseStateContainer
+@inherits ComponentBase
+@inject IShowRateService ShowRateService
+@inject ITrustworthinessService TrustworthinessService
+@inject IWinningRateService WinningRateService
+@inject StateContainer StateContainer
 
 <PageTitle>Home</PageTitle>
 

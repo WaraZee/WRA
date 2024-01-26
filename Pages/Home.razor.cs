@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Components;
-using WRA.Models;
-using WRA.Services.Interfaces;
+﻿using WRA.Models;
 
 namespace WRA.Pages
 {
-    public partial class Home : ComponentBase
+    public partial class Home
     {
         // 入力データ
         private List<Tip> _tips = new List<Tip>();
@@ -19,20 +17,10 @@ namespace WRA.Pages
 
         private List<WinningRate>? _winShowRates;
 
-        [Inject]
-        protected ITrustworthinessService? TrustworthinessService { get; set; }
-        [Inject]
-        protected IWinningRateService? WinningRateService { get; set; }
-        [Inject]
-        protected IShowRateService? ShowRateService { get; set; }
-
         protected override async Task OnInitializedAsync()
         {
             await InitializeTipAsync();
-            if (WinningRateService != null)
-            {
-                _winShowRates = WinningRateService.Create(CourseStateContainer.CourseName);
-            }
+            _winShowRates = WinningRateService.Create(StateContainer.CourseName);
         }
 
         private async Task InitializeTipAsync()
@@ -94,20 +82,13 @@ namespace WRA.Pages
         {
             await Task.Run(() =>
             {
-
-                if (WinningRateService != null)
+                _winShowRates = WinningRateService.Create(StateContainer.CourseName);
+                if (_winShowRates != null)
                 {
-                    _winShowRates = WinningRateService.Create(CourseStateContainer.CourseName);
+                    _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
                 }
-                if (TrustworthinessService != null && WinningRateService != null && ShowRateService != null)
-                {
-                    if (_winShowRates != null)
-                    {
-                        _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
-                    }
-                    _winCalculationResults = WinningRateService.Calculate(_tips);
-                    _showCalculationResults = ShowRateService.Calculate(_tips);
-                }
+                _winCalculationResults = WinningRateService.Calculate(_tips);
+                _showCalculationResults = ShowRateService.Calculate(_tips);
             });
         }
     }
