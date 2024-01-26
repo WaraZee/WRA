@@ -1,7 +1,5 @@
 /*’Ç‰Á*/
 :root {
-    --primary-focus-border: .3rem solid rgba(27, 94, 32, 1);
-    --primary-focus-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
     --accent-color: rgba(83, 109, 254, 1); /* #536dfe */
     --background-color-dark-theme: rgba(48, 48, 48, 1); /* #303030 */
     --dark-primary-color: rgba(56, 142, 60, 1); /* #388e3c */
@@ -10,10 +8,13 @@
     --primary-color: rgba(76, 175, 80, 1); /* #4caf50 */
     --primary-text-color: rgba(33, 33, 33, 1); /* #212121 */
     --secondry-text-color: rgba(117, 117, 117, 1); /* #757575 */
+    --selected-button-color: rgba(16, 43, 18, 1); /* #102b12 */
     --text-icon-color: rgba(255, 255, 255, 1); /* #ffffff */
 
     --primary-border-radius: .4rem;
     --primary-box-shadow: 0 .3rem .1rem -.2rem rgba(0, 0, 0, .2), 0 .2rem .2rem 0 rgba(0, 0, 0, .14), 0 0.1rem 0.5rem 0 rgba(0, 0, 0, .12);
+    --primary-focus-border: .3rem solid rgba(27, 94, 32, 1);
+    --primary-focus-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
 }
 
 /*’Ç‰Á*/

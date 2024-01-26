@@ -1,4 +1,10 @@
 ﻿@using WRA.Store
-@inject CourseStateContainer CourseStateContainer
+@implements IDisposable
+@inject StateContainer StateContainer
 
-<button class="course-button" @onclick="@(() => ChangePropertyValue(@Course))">@Content</button>
+<div class="course-button-flex-container">
+    <input id="turf-radio" name="course-radio" type="radio" checked="@(StateContainer.CourseName == "turf")" @onchange="@(() => ChangePropertyValue("turf"))" />
+    <label for="turf-radio">芝</label>
+    <input id="dirt-radio" name="course-radio" type="radio" checked="@(StateContainer.CourseName == "dirt")" @onchange="@(() => ChangePropertyValue("dirt"))" />
+    <label for="dirt-radio">ダート</label>
+</div>

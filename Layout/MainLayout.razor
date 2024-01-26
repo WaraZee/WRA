@@ -1,14 +1,12 @@
 ﻿@using WRA.Store
 @implements IDisposable
 @inherits LayoutComponentBase
-@inject CourseStateContainer CourseStateContainer
+@inject StateContainer StateContainer
 
 <div class="page">
     <header class="top">
         <TitleLabel Content="WaraZee.net" />
-        @CourseStateContainer.Property
-        <CourseButton Content="芝" Course="turf" />
-        <CourseButton Content="ダート" Course="dirt" />
+        <MenuButton />
     </header>
 
     <main class="bottom">

@@ -2,19 +2,24 @@
 
 namespace WRA.Components.Buttons
 {
-    public partial class CourseButton
+    public partial class MenuButton
     {
         [Parameter]
-        public string Course { get; set; } = "";
+        public int TicketType { get; set; }
 
         protected override void OnInitialized()
         {
             StateContainer.OnChange += StateHasChanged;
         }
 
-        private void ChangePropertyValue(string course)
+        private void ChangePropertyValue(bool isClicked)
         {
-            StateContainer.CourseName = course;
+            StateContainer.MenuIsClicked = !isClicked;
+        }
+
+        private void ChangePropertyValue(int typeId)
+        {
+            StateContainer.TicketTypeId = typeId;
         }
 
         public void Dispose()
