@@ -1,26 +1,36 @@
-﻿.course-button {
+﻿input[type=radio] {
+    display: none;
+}
+
+    input[type=radio]:checked + label {
+        background-color: var(--selected-button-color);
+    }
+
+label {
     background-color: var(--dark-primary-color);
+    border: none;
     border-radius: calc(var(--primary-border-radius) / 2);
-    height: 80%;
+    box-shadow: var(--primary-box-shadow);
+    color: var(--text-icon-color);
+    font-family: 'Kosugi', sans-serif;
+    height: 100%;
+    padding: .8rem 0;
+    text-align: center;
     width: 45%;
 }
 
-    .course-button:active {
-        box-shadow: none;
-    }
+.course-button-flex-container {
+    align-items: center;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    width: 80%;
+}
 
 /*Tablet*/
 @media (600px <= width < 768px) {
-    .course-button {
-        height: 80%;
-        width: 45%;
-    }
 }
 
 /*PC*/
 @media (768px <= width) {
-    .course-button {
-        height: 80%;
-        width: 45%;
-    }
 }

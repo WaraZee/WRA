@@ -2,4 +2,9 @@
 @implements IDisposable
 @inject StateContainer StateContainer
 
-<button class="course-button" style="background-color: @_backgroundColor;" @onclick="@(() => ChangePropertyValue(@Course))">@Content</button>
+<div class="course-button-flex-container">
+    <input id="turf-radio" name="course-radio" type="radio" checked @onchange="@(() => ChangePropertyValue("turf"))" />
+    <label for="turf-radio">芝</label>
+    <input id="dirt-radio" name="course-radio" type="radio" @onchange="@(() => ChangePropertyValue("dirt"))" />
+    <label for="dirt-radio">ダート</label>
+</div>

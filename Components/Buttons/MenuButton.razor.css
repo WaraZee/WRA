@@ -2,9 +2,6 @@
     background-color: transparent;
 }
 
-    .menu-button:active {
-    }
-
 .mode-button-menu {
     align-items: center;
     animation: fade-in 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -20,14 +17,6 @@
     z-index: 2;
     -webkit-animation: fade-in 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
-    .mode-button-menu .course-button-flex-container {
-        align-items: center;
-        display: flex;
-        height: 10%;
-        justify-content: space-between;
-        width: 80%;
-    }
 
 @-webkit-keyframes fade-in {
     0% {

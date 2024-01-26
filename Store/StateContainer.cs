@@ -2,36 +2,36 @@
 {
     public class StateContainer
     {
-        private string? savedCourseName;
-        private bool savedMenuIsClicked;
-        private int savedSelectedTicketTypeId;
+        private string? _savedCourseName;
+        private bool _savedMenuIsClicked;
+        private int _savedSelectedTicketTypeId;
 
         public string CourseName
         {
-            get => savedCourseName ?? string.Empty;
+            get => _savedCourseName ?? string.Empty;
             set
             {
-                savedCourseName = value;
+                _savedCourseName = value;
                 NotifyStateChanged();
             }
         }
 
         public bool MenuIsClicked
         {
-            get => savedMenuIsClicked;
+            get => _savedMenuIsClicked;
             set
             {
-                savedMenuIsClicked = value;
+                _savedMenuIsClicked = value;
                 NotifyStateChanged();
             }
         }
 
         public int TicketTypeId
         {
-            get => savedSelectedTicketTypeId;
+            get => _savedSelectedTicketTypeId;
             set
             {
-                savedSelectedTicketTypeId = value;
+                _savedSelectedTicketTypeId = value;
                 NotifyStateChanged();
             }
         }
