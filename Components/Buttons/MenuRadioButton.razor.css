@@ -20,7 +20,7 @@
 
     input[type=checkbox]:not(:checked) + label + div {
         align-items: center;
-        animation: fade-out 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-out 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         background-color: var(--background-color-dark-theme);
         display: flex;
         flex-direction: column;
@@ -31,7 +31,7 @@
         top: calc(4rem + .4rem);
         width: 16rem;
         z-index: 2;
-        -webkit-animation: fade-out 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        -webkit-animation: fade-out 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 
     input[type=checkbox]:indeterminate + label + div {
