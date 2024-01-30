@@ -3,6 +3,10 @@
 @inherits LayoutComponentBase
 @inject StateContainer StateContainer
 
+@if (StateContainer.IsLoading)
+{
+    <Loader />
+}
 <div class="page">
     <header class="top">
         <TitleLabel Content="WaraZee.net" />

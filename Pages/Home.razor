@@ -77,29 +77,4 @@
             <CalculationResultTable CalculationResults="@_trioCalculationResults" />
         </div>
     }
-
-    @if (_winShowRates != null)
-    {
-        <table>
-            <thead>
-                <tr>
-                    <th>単勝オッズ</th>
-                    <th>勝率</th>
-                    <th>連対率</th>
-                    <th>複勝率</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (Rate rate in _winShowRates)
-                {
-                    <tr>
-                        <td>@rate.WinOdds.ToString()</td>
-                        <td>@rate.WinRate.ToString()</td>
-                        <td>@rate.OneTwoRate.ToString()</td>
-                        <td>@rate.ShowRate.ToString()</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
 </div>

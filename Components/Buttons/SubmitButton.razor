@@ -1,3 +1,6 @@
-﻿@inherits ButtonBase
+﻿@using WRA.Store
+@implements IDisposable
+@inherits ButtonBase
+@inject StateContainer StateContainer
 
-<button class="submit-button" @onclick="@OnClick">@Content</button>
+<button class="submit-button" @onclick="@OnClickAsync">@Content</button>
