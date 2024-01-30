@@ -2,9 +2,10 @@
 @using WRA.Services.Interfaces
 @using WRA.Store
 @inherits ComponentBase
+@inject IAllRateService AllRateService
 @inject IShowRateService ShowRateService
 @inject ITrustworthinessService TrustworthinessService
-@inject IWinningRateService WinningRateService
+@inject IWinRateService WinRateService
 @inject StateContainer StateContainer
 
 <PageTitle>Home</PageTitle>

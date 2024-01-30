@@ -7,7 +7,7 @@ namespace WRA.Services
     {
         private int _ranking;
 
-        public List<Tip> CalculateTrustworthinessByOdds(List<WinningRate> winShowRates, List<Tip> tips)
+        public List<Tip> CalculateTrustworthinessByOdds(List<Rate> winShowRates, List<Tip> tips)
         {
             _ranking = 0;
 

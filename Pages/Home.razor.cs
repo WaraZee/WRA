@@ -15,12 +15,11 @@ namespace WRA.Pages
         // 3連複
         private List<CalculationResult>? _trioCalculationResults;
 
-        private List<WinningRate>? _winShowRates;
+        private List<Rate>? _winShowRates;
 
         protected override async Task OnInitializedAsync()
         {
             await InitializeTipAsync();
-            _winShowRates = WinningRateService.Create(StateContainer.CourseName);
         }
 
         private async Task InitializeTipAsync()
@@ -82,12 +81,12 @@ namespace WRA.Pages
         {
             await Task.Run(() =>
             {
-                _winShowRates = WinningRateService.Create(StateContainer.CourseName);
+                _winShowRates = AllRateService.GetRate(StateContainer.CourseName);
                 if (_winShowRates != null)
                 {
                     _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
                 }
-                _winCalculationResults = WinningRateService.Calculate(_tips);
+                _winCalculationResults = WinRateService.Calculate(_tips);
                 _showCalculationResults = ShowRateService.Calculate(_tips);
             });
         }
