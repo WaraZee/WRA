@@ -370,8 +370,809 @@ namespace WRA.Services
                             WinRate = 29.0f / 100,
                             OneTwoRate = 48.0f / 100,
                             ShowRate = 62.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.0f,
+                            WinRate = 28.0f / 100,
+                            OneTwoRate = 47.0f / 100,
+                            ShowRate = 62.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.1f,
+                            WinRate = 27.0f / 100,
+                            OneTwoRate = 46.0f / 100,
+                            ShowRate = 61.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.2f,
+                            WinRate = 26.0f / 100,
+                            OneTwoRate = 45.0f / 100,
+                            ShowRate = 60.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.3f,
+                            WinRate = 25.0f / 100,
+                            OneTwoRate = 44.0f / 100,
+                            ShowRate = 59.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.4f,
+                            WinRate = 24.0f / 100,
+                            OneTwoRate = 43.0f / 100,
+                            ShowRate = 58.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.5f,
+                            WinRate = 23.0f / 100,
+                            OneTwoRate = 42.0f / 100,
+                            ShowRate = 57.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.6f,
+                            WinRate = 22.0f / 100,
+                            OneTwoRate = 41.0f / 100,
+                            ShowRate = 56.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.7f,
+                            WinRate = 22.0f / 100,
+                            OneTwoRate = 40.0f / 100,
+                            ShowRate = 55.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.8f,
+                            WinRate = 21.0f / 100,
+                            OneTwoRate = 39.0f / 100,
+                            ShowRate = 54.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 3.9f,
+                            WinRate = 21.0f / 100,
+                            OneTwoRate = 38.0f / 100,
+                            ShowRate = 52.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.0f,
+                            WinRate = 21.0f / 100,
+                            OneTwoRate = 37.0f / 100,
+                            ShowRate = 51.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.1f,
+                            WinRate = 20.0f / 100,
+                            OneTwoRate = 36.0f / 100,
+                            ShowRate = 51.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.2f,
+                            WinRate = 19.0f / 100,
+                            OneTwoRate = 35.0f / 100,
+                            ShowRate = 50.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.3f,
+                            WinRate = 18.0f / 100,
+                            OneTwoRate = 35.0f / 100,
+                            ShowRate = 49.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.4f,
+                            WinRate = 18.0f / 100,
+                            OneTwoRate = 34.0f / 100,
+                            ShowRate = 49.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.5f,
+                            WinRate = 17.0f / 100,
+                            OneTwoRate = 34.0f / 100,
+                            ShowRate = 49.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.6f,
+                            WinRate = 17.0f / 100,
+                            OneTwoRate = 34.0f / 100,
+                            ShowRate = 49.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.7f,
+                            WinRate = 16.0f / 100,
+                            OneTwoRate = 33.0f / 100,
+                            ShowRate = 49.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.8f,
+                            WinRate = 16.0f / 100,
+                            OneTwoRate = 33.0f / 100,
+                            ShowRate = 48.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 4.9f,
+                            WinRate = 16.0f / 100,
+                            OneTwoRate = 33.0f / 100,
+                            ShowRate = 48.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.0f,
+                            WinRate = 16.0f / 100,
+                            OneTwoRate = 32.0f / 100,
+                            ShowRate = 47.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.1f,
+                            WinRate = 15.0f / 100,
+                            OneTwoRate = 32.0f / 100,
+                            ShowRate = 45.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.2f,
+                            WinRate = 15.0f / 100,
+                            OneTwoRate = 32.0f / 100,
+                            ShowRate = 44.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.3f,
+                            WinRate = 15.0f / 100,
+                            OneTwoRate = 31.0f / 100,
+                            ShowRate = 43.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.4f,
+                            WinRate = 14.0f / 100,
+                            OneTwoRate = 31.0f / 100,
+                            ShowRate = 43.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.5f,
+                            WinRate = 14.0f / 100,
+                            OneTwoRate = 31.0f / 100,
+                            ShowRate = 43.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.6f,
+                            WinRate = 13.0f / 100,
+                            OneTwoRate = 30.0f / 100,
+                            ShowRate = 42.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.7f,
+                            WinRate = 13.0f / 100,
+                            OneTwoRate = 29.0f / 100,
+                            ShowRate = 41.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.8f,
+                            WinRate = 13.0f / 100,
+                            OneTwoRate = 28.0f / 100,
+                            ShowRate = 41.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 5.9f,
+                            WinRate = 13.0f / 100,
+                            OneTwoRate = 28.0f / 100,
+                            ShowRate = 41.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.0f,
+                            WinRate = 13.0f / 100,
+                            OneTwoRate = 28.0f / 100,
+                            ShowRate = 41.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.1f,
+                            WinRate = 13.0f / 100,
+                            OneTwoRate = 28.0f / 100,
+                            ShowRate = 41.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.2f,
+                            WinRate = 12.0f / 100,
+                            OneTwoRate = 28.0f / 100,
+                            ShowRate = 41.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.3f,
+                            WinRate = 12.0f / 100,
+                            OneTwoRate = 28.0f / 100,
+                            ShowRate = 40.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.4f,
+                            WinRate = 12.0f / 100,
+                            OneTwoRate = 27.0f / 100,
+                            ShowRate = 40.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.5f,
+                            WinRate = 12.0f / 100,
+                            OneTwoRate = 25.0f / 100,
+                            ShowRate = 39.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.6f,
+                            WinRate = 12.0f / 100,
+                            OneTwoRate = 25.0f / 100,
+                            ShowRate = 38.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.7f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.8f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 6.9f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.0f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.1f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.2f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.3f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 37.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.4f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 24.0f / 100,
+                            ShowRate = 36.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.5f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 23.0f / 100,
+                            ShowRate = 35.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.6f,
+                            WinRate = 11.0f / 100,
+                            OneTwoRate = 22.0f / 100,
+                            ShowRate = 34.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.7f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 22.0f / 100,
+                            ShowRate = 33.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.8f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 21.0f / 100,
+                            ShowRate = 33.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 7.9f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 21.0f / 100,
+                            ShowRate = 33.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.0f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 21.0f / 100,
+                            ShowRate = 33.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.1f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 21.0f / 100,
+                            ShowRate = 33.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.2f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 21.0f / 100,
+                            ShowRate = 33.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.3f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 32.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.4f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 32.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.5f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 32.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.6f,
+                            WinRate = 10.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 32.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.7f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 31.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.8f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 31.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 8.9f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 31.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.0f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 31.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.1f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 31.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.2f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.3f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.4f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.5f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.6f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.7f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 20.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.8f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 19.0f / 100,
+                            ShowRate = 30.0f / 100
+                        },
+                        new Rate
+                        {
+                            WinOdds = 9.9f,
+                            WinRate = 9.0f / 100,
+                            OneTwoRate = 19.0f / 100,
+                            ShowRate = 29.0f / 100
                         }
                     };
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 10.0f + (i / 10f),
+                            WinRate = 7.0f / 100,
+                            OneTwoRate = 18.0f / 100,
+                            ShowRate = 29.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 11.0f + (i / 10f),
+                            WinRate = 7.0f / 100,
+                            OneTwoRate = 17.0f / 100,
+                            ShowRate = 28.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 12.0f + (i / 10f),
+                            WinRate = 7.0f / 100,
+                            OneTwoRate = 16.0f / 100,
+                            ShowRate = 25.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 13.0f + (i / 10f),
+                            WinRate = 6.0f / 100,
+                            OneTwoRate = 15.0f / 100,
+                            ShowRate = 24.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 14.0f + (i / 10f),
+                            WinRate = 6.0f / 100,
+                            OneTwoRate = 14.0f / 100,
+                            ShowRate = 23.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 15.0f + (i / 10f),
+                            WinRate = 5.0f / 100,
+                            OneTwoRate = 13.0f / 100,
+                            ShowRate = 22.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 16.0f + (i / 10f),
+                            WinRate = 5.0f / 100,
+                            OneTwoRate = 12.0f / 100,
+                            ShowRate = 21.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 17.0f + (i / 10f),
+                            WinRate = 5.0f / 100,
+                            OneTwoRate = 11.0f / 100,
+                            ShowRate = 20.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 18.0f + (i / 10f),
+                            WinRate = 5.0f / 100,
+                            OneTwoRate = 11.0f / 100,
+                            ShowRate = 19.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 19.0f + (i / 10f),
+                            WinRate = 5.0f / 100,
+                            OneTwoRate = 11.0f / 100,
+                            ShowRate = 19.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 20.0f + (i / 10f),
+                            WinRate = 4.0f / 100,
+                            OneTwoRate = 10.0f / 100,
+                            ShowRate = 18.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 21.0f + (i / 10f),
+                            WinRate = 4.0f / 100,
+                            OneTwoRate = 9.0f / 100,
+                            ShowRate = 17.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 22.0f + (i / 10f),
+                            WinRate = 4.0f / 100,
+                            OneTwoRate = 9.0f / 100,
+                            ShowRate = 17.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 23.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 9.0f / 100,
+                            ShowRate = 16.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 24.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 8.0f / 100,
+                            ShowRate = 15.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 25.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 8.0f / 100,
+                            ShowRate = 14.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 26.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 8.0f / 100,
+                            ShowRate = 14.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 27.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 7.0f / 100,
+                            ShowRate = 13.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 28.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 7.0f / 100,
+                            ShowRate = 13.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 10f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 29.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 7.0f / 100,
+                            ShowRate = 12.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 50f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 30.0f + (i / 10f),
+                            WinRate = 3.0f / 100,
+                            OneTwoRate = 6.0f / 100,
+                            ShowRate = 11.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 50f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 35.0f + (i / 10f),
+                            WinRate = 2.0f / 100,
+                            OneTwoRate = 5.0f / 100,
+                            ShowRate = 10.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 50f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 40.0f + (i / 10f),
+                            WinRate = 2.0f / 100,
+                            OneTwoRate = 5.0f / 100,
+                            ShowRate = 10.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 50f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 45.0f + (i / 10f),
+                            WinRate = 1.0f / 100,
+                            OneTwoRate = 4.0f / 100,
+                            ShowRate = 9.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 100f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 50.0f + (i / 10f),
+                            WinRate = 1.0f / 100,
+                            OneTwoRate = 4.0f / 100,
+                            ShowRate = 8.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 100f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 60.0f + (i / 10f),
+                            WinRate = 1.0f / 100,
+                            OneTwoRate = 3.0f / 100,
+                            ShowRate = 7.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 100f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 70.0f + (i / 10f),
+                            WinRate = 1.0f / 100,
+                            OneTwoRate = 3.0f / 100,
+                            ShowRate = 6.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 100f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 80.0f + (i / 10f),
+                            WinRate = 1.0f / 100,
+                            OneTwoRate = 2.0f / 100,
+                            ShowRate = 5.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 100f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 90.0f + (i / 10f),
+                            WinRate = 1.0f / 100,
+                            OneTwoRate = 2.0f / 100,
+                            ShowRate = 5.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 1000f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 100.0f + (i / 10f),
+                            WinRate = 0f / 100,
+                            OneTwoRate = 1.0f / 100,
+                            ShowRate = 3.0f / 100
+                        });
+                    }
+                    for (float i = 0f; i < 2000f; i++)
+                    {
+                        rateByWinOddsRates.Add(new Rate
+                        {
+                            WinOdds = 200.0f + (i / 10f),
+                            WinRate = 0f / 100,
+                            OneTwoRate = 1.0f / 100,
+                            ShowRate = 1.0f / 100
+                        });
+                    }
+                    // 400.0 - 999.9 はすべて0%
                     return rateByWinOddsRates;
                 default:
                     List<Rate> dummyRates = new List<Rate>();

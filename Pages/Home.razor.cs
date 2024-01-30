@@ -81,7 +81,8 @@ namespace WRA.Pages
         {
             await Task.Run(() =>
             {
-                _winShowRates = AllRateService.GetRate(StateContainer.CourseName);
+                //_winShowRates = AllRateService.GetRate(StateContainer.CourseName);
+                _winShowRates = AllRateService.GetRate("rateByWinOdds");
                 if (_winShowRates != null)
                 {
                     _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
