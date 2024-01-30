@@ -1,5 +1,5 @@
-﻿using WRA.Models;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
+using WRA.Models;
 
 namespace WRA.Components.Inputs.Bases
 {

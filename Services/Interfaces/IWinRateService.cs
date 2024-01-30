@@ -2,9 +2,8 @@
 
 namespace WRA.Services.Interfaces
 {
-    public interface IWinningRateService
+    public interface IWinRateService
     {
-        List<WinningRate> Create(string name);
         List<CalculationResult> Calculate(List<Tip> tips);
     }
 }

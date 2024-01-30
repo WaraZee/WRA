@@ -1,30 +1,12 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Microsoft.JSInterop;
 
 namespace WRA.Components.Buttons
 {
     public partial class MenuButton
     {
-        [Parameter]
-        public int TicketType { get; set; }
-
-        protected override void OnInitialized()
+        protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            StateContainer.OnChange += StateHasChanged;
-        }
-
-        private void ChangePropertyValue(bool isClicked)
-        {
-            StateContainer.MenuIsClicked = !isClicked;
-        }
-
-        private void ChangePropertyValue(int typeId)
-        {
-            StateContainer.TicketTypeId = typeId;
-        }
-
-        public void Dispose()
-        {
-            StateContainer.OnChange -= StateHasChanged;
+            await JSRuntime.InvokeVoidAsync("activeIndeterminate");
         }
     }
 }
