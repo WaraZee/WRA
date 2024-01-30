@@ -2,7 +2,7 @@
 
 namespace WRA.Components.Buttons
 {
-    public partial class MenuRadioButton
+    public partial class MenuButton
     {
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
