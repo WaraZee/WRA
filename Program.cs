@@ -15,7 +15,7 @@ builder.Services.AddSingleton<StateContainer>();
 
 // 計算用サービス
 builder.Services.AddSingleton<IAllRateService, AllRateService>();
-builder.Services.AddSingleton<ITrustworthinessService, TrustworthinessService>();
+builder.Services.AddSingleton<IPopularityService, PopularityService>();
 builder.Services.AddSingleton<IWinRateService, WinRateService>();
 builder.Services.AddSingleton<IShowRateService, ShowRateService>();
 builder.Services.AddSingleton<ITrieceRateService, TrierceRateService>();

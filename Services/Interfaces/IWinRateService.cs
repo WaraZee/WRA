@@ -4,6 +4,7 @@ namespace WRA.Services.Interfaces
 {
     public interface IWinRateService
     {
-        List<CalculationResult> Calculate(List<Tip> tips);
+        List<CalculationResult> CalculateByCourse(List<Tip> tips);
+        List<CalculationResult> CalculateByWinOdds(List<Rate> rates, List<Tip> tips);
     }
 }

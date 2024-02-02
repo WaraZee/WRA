@@ -42,13 +42,39 @@ namespace WRA.Pages
         {
             await Task.Run(() =>
             {
-                _winShowRates = AllRateService.GetRate(StateContainer.CourseName);
+                // "rateByCourse" で判断しているが、ボタンは "人気" と表示されている。理由は、コース別レートが人気別になっているため。
+                if (StateContainer.FormulaName == "rateByCourse")
+                {
+                    _winShowRates = AllRateService.GetRateByCourse(StateContainer.CourseName);
+                }
+                else if (StateContainer.FormulaName == "rateByWinOdds")
+                {
+                    _winShowRates = AllRateService.GetRateByOdds(StateContainer.FormulaName);
+                }
+
                 if (_winShowRates != null)
                 {
-                    _tips = TrustworthinessService.CalculateTrustworthinessByOdds(_winShowRates, _tips);
+                    _tips = PopularityService.Calculate(_winShowRates, _tips);
+
+                    if (StateContainer.FormulaName == "rateByCourse")
+                    {
+                        _winCalculationResults = WinRateService.CalculateByCourse(_tips);
+                    }
+                    else if (StateContainer.FormulaName == "rateByWinOdds")
+                    {
+                        _winCalculationResults = WinRateService.CalculateByWinOdds(_winShowRates, _tips);
+                    }
+
+                    // yet
+                    if (StateContainer.FormulaName == "rateByCourse")
+                    {
+                        _showCalculationResults = ShowRateService.CalculateByCourse(_tips);
+                    }
+                    else if (StateContainer.FormulaName == "rateByWinOdds")
+                    {
+                        _showCalculationResults = ShowRateService.CalculateByWinOdds(_winShowRates, _tips);
+                    }
                 }
-                _winCalculationResults = WinRateService.Calculate(_tips);
-                _showCalculationResults = ShowRateService.Calculate(_tips);
             });
         }
     }

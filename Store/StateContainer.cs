@@ -3,6 +3,7 @@
     public class StateContainer
     {
         private string? _savedCourseName;
+        private string? _savedFormulaName;
         private bool _savedIsLoading;
         private bool _savedMenuIsClicked;
         private int _savedSelectedTicketTypeId;
@@ -13,6 +14,16 @@
             set
             {
                 _savedCourseName = value;
+                NotifyStateChanged();
+            }
+        }
+
+        public string FormulaName
+        {
+            get => _savedFormulaName ?? string.Empty;
+            set
+            {
+                _savedFormulaName = value;
                 NotifyStateChanged();
             }
         }

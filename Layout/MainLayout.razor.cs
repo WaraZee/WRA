@@ -5,6 +5,7 @@
         protected override void OnInitialized()
         {
             StateContainer.CourseName = "turf";
+            StateContainer.FormulaName = "rateByCourse";
             StateContainer.MenuIsClicked = false;
             StateContainer.OnChange += StateHasChanged;
         }

@@ -4,6 +4,7 @@ namespace WRA.Services.Interfaces
 {
     public interface IAllRateService
     {
-        List<Rate> GetRate(string name);
+        List<Rate> GetRateByCourse(string name);
+        List<Rate> GetRateByOdds(string name);
     }
 }

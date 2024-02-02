@@ -5,7 +5,7 @@ namespace WRA.Services
 {
     public class AllRateService : IAllRateService
     {
-        public List<Rate> GetRate(string name)
+        public List<Rate> GetRateByCourse(string name)
         {
             switch (name)
             {
@@ -235,6 +235,16 @@ namespace WRA.Services
                         }
                     };
                     return dirtWinShowRates;
+                default:
+                    List<Rate> dummyRates = new List<Rate>();
+                    return dummyRates;
+            }
+        }
+
+        public List<Rate> GetRateByOdds(string name)
+        {
+            switch (name)
+            {
                 case "rateByWinOdds":
                     List<Rate> rateByWinOddsRates = new List<Rate>
                     {
