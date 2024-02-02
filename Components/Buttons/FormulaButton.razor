@@ -1,0 +1,10 @@
+﻿@using WRA.Store
+@implements IDisposable
+@inject StateContainer StateContainer
+
+<div class="formula-button-flex-container">
+    <input id="by-popularity-radio" name="formula-radio" type="radio" checked="@(StateContainer.FormulaName == "rateByCourse")" @onchange="@(() => ChangePropertyValue("rateByCourse"))" />
+    <label for="by-popularity-radio">人気</label>
+    <input id="by-win-odds-radio" name="formula-radio" type="radio" checked="@(StateContainer.FormulaName == "rateByWinOdds")" @onchange="@(() => ChangePropertyValue("rateByWinOdds"))" />
+    <label for="by-win-odds-radio">オッズ</label>
+</div>

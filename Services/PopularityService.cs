@@ -3,11 +3,11 @@ using WRA.Services.Interfaces;
 
 namespace WRA.Services
 {
-    public class TrustworthinessService : ITrustworthinessService
+    public class PopularityService : IPopularityService
     {
         private int _ranking;
 
-        public List<Tip> CalculateTrustworthinessByOdds(List<Rate> winShowRates, List<Tip> tips)
+        public List<Tip> Calculate(List<Rate> winShowRates, List<Tip> tips)
         {
             _ranking = 0;
 

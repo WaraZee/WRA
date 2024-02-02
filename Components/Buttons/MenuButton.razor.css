@@ -6,6 +6,8 @@
         align-items: center;
         animation: fade-in 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         background-color: var(--background-color-dark-theme);
+        border-bottom-left-radius: calc(var(--primary-border-radius) / 2);
+        box-shadow: var(--primary-box-shadow);
         display: flex;
         flex-direction: column;
         height: 30rem;
@@ -22,6 +24,8 @@
         align-items: center;
         animation: fade-out 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         background-color: var(--background-color-dark-theme);
+        border-bottom-left-radius: calc(var(--primary-border-radius) / 2);
+        box-shadow: var(--primary-box-shadow);
         display: flex;
         flex-direction: column;
         height: 30rem;

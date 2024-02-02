@@ -1,0 +1,36 @@
+﻿input[type=radio] {
+    display: none;
+}
+
+    input[type=radio]:checked + label {
+        background-color: var(--selected-button-color);
+    }
+
+label {
+    background-color: var(--dark-primary-color);
+    border: none;
+    border-radius: calc(var(--primary-border-radius) / 2);
+    box-shadow: var(--primary-box-shadow);
+    color: var(--text-icon-color);
+    font-family: 'Kosugi', sans-serif;
+    height: 100%;
+    padding: .8rem 0;
+    text-align: center;
+    width: 45%;
+}
+
+.formula-button-flex-container {
+    align-items: center;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    width: 80%;
+}
+
+/*Tablet*/
+@media (600px <= width < 768px) {
+}
+
+/*PC*/
+@media (768px <= width) {
+}
