@@ -26,31 +26,31 @@ namespace WRA.Components.Tables
                 switch (inputValue.ColumnId)
                 {
                     case 1:
-                        Tips[inputValue.HorseNumber].WinOdds = inputValue.Value;
+                        Tips[inputValue.HorseNumber].WinOdds = inputValue.Value ?? 0;
                         break;
                     case 2:
-                        Tips[inputValue.HorseNumber].ShowOdds = inputValue.Value;
+                        Tips[inputValue.HorseNumber].ShowOdds = inputValue.Value ?? 0;
                         break;
                     case 3:
-                        Tips[inputValue.HorseNumber].TrierceOdds = inputValue.Value;
+                        Tips[inputValue.HorseNumber].TrierceOdds = inputValue.Value ?? 0;
                         break;
                     case 4:
-                        Tips[inputValue.HorseNumber].TrioOdds = inputValue.Value;
+                        Tips[inputValue.HorseNumber].TrioOdds = inputValue.Value ?? 0;
                         break;
                     case 5:
-                        Tips[inputValue.HorseNumber].NumberOfRaces = inputValue.Value;
+                        Tips[inputValue.HorseNumber].NumberOfRaces = inputValue.Value ?? 0;
                         break;
                     case 6:
-                        Tips[inputValue.HorseNumber].NumberOfFirstPlaces = inputValue.Value;
+                        Tips[inputValue.HorseNumber].NumberOfFirstPlaces = inputValue.Value ?? 0;
                         break;
                     case 7:
-                        Tips[inputValue.HorseNumber].NumberOfSecondPlaces = inputValue.Value;
+                        Tips[inputValue.HorseNumber].NumberOfSecondPlaces = inputValue.Value ?? 0;
                         break;
                     case 8:
-                        Tips[inputValue.HorseNumber].NumberOfThirdPlaces = inputValue.Value;
+                        Tips[inputValue.HorseNumber].NumberOfThirdPlaces = inputValue.Value ?? 0;
                         break;
                     case 9:
-                        Tips[inputValue.HorseNumber].Stake = inputValue.Value;
+                        Tips[inputValue.HorseNumber].Stake = inputValue.Value ?? 0;
                         break;
                     default:
                         break;
