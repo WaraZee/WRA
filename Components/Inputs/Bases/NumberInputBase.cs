@@ -11,6 +11,8 @@ namespace WRA.Components.Inputs.Bases
         public int ColumnId { get; set; }
         [Parameter]
         public int HorseNumber { get; set; }
+        [Parameter]
+        public int TabIndex { get; set; }
 
         public float Value
         {

@@ -6,7 +6,7 @@
             <th>@_horseNumberHeader</th>
             <th>@_winOddsHeader</th>
             <th>@_showOddsHeader</th>
-@*             <th>@_trierceOddsHeader</th>
+            @*             <th>@_trierceOddsHeader</th>
             <th>@_trioOddsHeader</th> *@
             <th>@_numberOfRacesHeader</th>
             <th>@_numberOfFirstPlacesHeader</th>
@@ -20,15 +20,15 @@
         {
             <tr>
                 <td>@(tip.HorseNumber + 1)</td>
-                <td><OddsInput ColumnId="1" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-                <td><OddsInput ColumnId="2" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-@*                 <td><OddsInput ColumnId="3" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-                <td><OddsInput ColumnId="4" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td> *@
-                <td><NumberOfRaceInput ColumnId="5" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-                <td><NumberOfRaceInput ColumnId="6" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-                <td><NumberOfRaceInput ColumnId="7" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-                <td><NumberOfRaceInput ColumnId="8" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
-                <td><StakeInput ColumnId="9" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+                <td><OddsInput ColumnId="1" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 1) + tip.HorseNumber)" /></td>
+                <td><OddsInput ColumnId="2" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 2) + tip.HorseNumber)" /></td>
+                @*                 <td><OddsInput ColumnId="3" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td>
+            <td><OddsInput ColumnId="4" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" /></td> *@
+                <td><NumberOfRaceInput ColumnId="5" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 3) + tip.HorseNumber)" /></td>
+                <td><NumberOfRaceInput ColumnId="6" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 4) + tip.HorseNumber)" /></td>
+                <td><NumberOfRaceInput ColumnId="7" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 5) + tip.HorseNumber)" /></td>
+                <td><NumberOfRaceInput ColumnId="8" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 6) + tip.HorseNumber)" /></td>
+                <td><StakeInput ColumnId="9" HorseNumber="@tip.HorseNumber" OnValueChanged="@NumberInputOnChangeAsync" TabIndex="@((Tips.Count * 7) + tip.HorseNumber)" /></td>
             </tr>
         }
     </tbody>
