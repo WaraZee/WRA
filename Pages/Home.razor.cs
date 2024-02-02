@@ -38,45 +38,6 @@ namespace WRA.Pages
             });
         }
 
-        private async Task NumberInputOnChangeAsync(InputValue inputValue)
-        {
-            await Task.Run(() =>
-            {
-                switch (inputValue.ColumnId)
-                {
-                    case 1:
-                        _tips[inputValue.HorseNumber].WinOdds = inputValue.Value;
-                        break;
-                    case 2:
-                        _tips[inputValue.HorseNumber].ShowOdds = inputValue.Value;
-                        break;
-                    case 3:
-                        _tips[inputValue.HorseNumber].TrierceOdds = inputValue.Value;
-                        break;
-                    case 4:
-                        _tips[inputValue.HorseNumber].TrioOdds = inputValue.Value;
-                        break;
-                    case 5:
-                        _tips[inputValue.HorseNumber].NumberOfRaces = inputValue.Value;
-                        break;
-                    case 6:
-                        _tips[inputValue.HorseNumber].NumberOfFirstPlaces = inputValue.Value;
-                        break;
-                    case 7:
-                        _tips[inputValue.HorseNumber].NumberOfSecondPlaces = inputValue.Value;
-                        break;
-                    case 8:
-                        _tips[inputValue.HorseNumber].NumberOfThirdPlaces = inputValue.Value;
-                        break;
-                    case 9:
-                        _tips[inputValue.HorseNumber].Stake = inputValue.Value;
-                        break;
-                    default:
-                        break;
-                }
-            });
-        }
-
         private async Task SubmitButtonOnClickAsync()
         {
             await Task.Run(() =>

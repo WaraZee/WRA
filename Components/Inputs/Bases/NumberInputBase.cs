@@ -14,7 +14,7 @@ namespace WRA.Components.Inputs.Bases
         [Parameter]
         public int TabIndex { get; set; }
 
-        public float Value
+        public float? Value
         {
             get => _value;
             set
@@ -33,6 +33,6 @@ namespace WRA.Components.Inputs.Bases
             }
         }
 
-        private float _value;
+        private float? _value;
     }
 }

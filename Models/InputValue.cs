@@ -4,6 +4,6 @@
     {
         public int ColumnId { get; set; }
         public int HorseNumber { get; set; }
-        public float Value { get; set; }
+        public float? Value { get; set; }
     }
 }
