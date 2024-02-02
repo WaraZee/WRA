@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WRA</title>
+    <base href="/WRA/" />
+
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--コンポーネントごとに存在するCSSを適用-->
+    <link href="WRA.styles.css" rel="stylesheet" />
+
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+
+    <!--Googleフォントを適用-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--タイトル-->
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <!--その他-->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <!--コンポーネントごとに存在するJavaScriptを適用-->
+    <script src="Components/Buttons/MenuButton.razor.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src="brotliloader.min.js" type="module"></script>
+</body>
+
+</html>
